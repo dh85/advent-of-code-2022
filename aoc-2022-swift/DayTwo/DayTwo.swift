@@ -1,11 +1,10 @@
 let day2Input = readFile(name: "Day02.txt").lines()
 
+private let xAscii = Character("X").asciiValue!
+
 func day2Part1(input: [String]) -> Int {
     func shapeScore(_ shape: Character) -> Int {
-        guard let shape = shape.asciiValue, let x = Character("X").asciiValue else {
-            fatalError("Check your inputs")
-        }
-        return Int(shape - x + 1)
+        Int(shape.asciiValue! - xAscii + 1)
     }
 
     func resultScore(_ theirShape: Character, _ myShape: Character) -> Int {
@@ -18,12 +17,7 @@ func day2Part1(input: [String]) -> Int {
     }
 
     return input
-        .map { line in
-            guard let theirShape = line.first, let myShape = line.last else {
-                return 0
-            }
-            return shapeScore(myShape) + resultScore(theirShape, myShape)
-        }
+        .map { shapeScore($0.last!) + resultScore($0.first!, $0.last!) }
         .sum()
 }
 
@@ -38,18 +32,10 @@ func day2Part2(input: [String]) -> Int {
     }
 
     func resultScore(_ result: Character) -> Int {
-        guard let shape = result.asciiValue, let x = Character("X").asciiValue else {
-            fatalError("Check your inputs")
-        }
-        return Int((shape - x) * 3)
+        Int((result.asciiValue! - xAscii) * 3)
     }
 
     return input
-        .map { line in
-            guard let theirShape = line.first, let result = line.last else {
-                return 0
-            }
-            return shapeScore(theirShape, result) + resultScore(result)
-        }
+        .map { shapeScore($0.first!, $0.last!) + resultScore($0.last!) }
         .sum()
 }

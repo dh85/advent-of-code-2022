@@ -34,6 +34,7 @@
 /* Begin PBXFileReference section */
 		970870432955CB7900B0672B /* DayTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTwo.swift; sourceTree = "<group>"; };
 		970870452955D29700B0672B /* Day02.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day02.txt; sourceTree = "<group>"; };
+		9714825F2956DAD6003FB3A8 /* Day03.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day03.txt; sourceTree = "<group>"; };
 		978EF0EC2942115800F8938C /* aoc-2022-swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "aoc-2022-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		978EF0EF2942115800F8938C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		978EF0F62942128700F8938C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -62,6 +63,14 @@
 			path = DayTwo;
 			sourceTree = "<group>";
 		};
+		9714825E2956DA89003FB3A8 /* DayThree */ = {
+			isa = PBXGroup;
+			children = (
+				9714825F2956DAD6003FB3A8 /* Day03.txt */,
+			);
+			path = DayThree;
+			sourceTree = "<group>";
+		};
 		978EF0E32942115800F8938C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +92,7 @@
 			children = (
 				978EF1072942560D00F8938C /* DayOne */,
 				970870422955CA7300B0672B /* DayTwo */,
+				9714825E2956DA89003FB3A8 /* DayThree */,
 				978EF0EF2942115800F8938C /* main.swift */,
 				978EF0F62942128700F8938C /* Utils.swift */,
 			);

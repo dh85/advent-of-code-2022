@@ -8,11 +8,17 @@ func readFile(name: String) -> String {
 
 
 extension String.SubSequence {
-    func lines() -> [String] { components(separatedBy: "\n") }
+    func lines() -> [String] { components(separatedBy: .newlines) }
 }
 
 extension String {
-    func lines() -> [String] { components(separatedBy: "\n") }
+    func lines() -> [String] {
+        var strings = components(separatedBy: .newlines)
+        if strings.last?.isEmpty == true {
+            _ = strings.removeLast()
+        }
+        return strings
+    }
 }
 
 extension Collection where Element: Numeric {
