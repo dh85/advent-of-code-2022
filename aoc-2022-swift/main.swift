@@ -13,3 +13,4 @@
 
 // Day 4
 print(day04Part1(input: day04Input))
+print(day04Part2(input: day04Input))
