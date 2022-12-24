@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		970870442955CB7900B0672B /* DayTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970870432955CB7900B0672B /* DayTwo.swift */; };
 		970870462955D34400B0672B /* Day02.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 970870452955D29700B0672B /* Day02.txt */; };
+		971482602956DE73003FB3A8 /* Day03.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9714825F2956DAD6003FB3A8 /* Day03.txt */; };
+		971482622956DE81003FB3A8 /* DayThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971482612956DE81003FB3A8 /* DayThree.swift */; };
 		978EF0F02942115800F8938C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978EF0EF2942115800F8938C /* main.swift */; };
 		978EF0F72942128700F8938C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 978EF0F62942128700F8938C /* Utils.swift */; };
 		978EF0FA294213FE00F8938C /* Day01_test.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = 978EF0F8294212DF00F8938C /* Day01_test.txt */; };
@@ -23,6 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				971482602956DE73003FB3A8 /* Day03.txt in CopyFiles */,
 				970870462955D34400B0672B /* Day02.txt in CopyFiles */,
 				978EF0FA294213FE00F8938C /* Day01_test.txt in CopyFiles */,
 				978EF0FB294213FE00F8938C /* Day01.txt in CopyFiles */,
@@ -35,6 +38,7 @@
 		970870432955CB7900B0672B /* DayTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayTwo.swift; sourceTree = "<group>"; };
 		970870452955D29700B0672B /* Day02.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day02.txt; sourceTree = "<group>"; };
 		9714825F2956DAD6003FB3A8 /* Day03.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Day03.txt; sourceTree = "<group>"; };
+		971482612956DE81003FB3A8 /* DayThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayThree.swift; sourceTree = "<group>"; };
 		978EF0EC2942115800F8938C /* aoc-2022-swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "aoc-2022-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		978EF0EF2942115800F8938C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		978EF0F62942128700F8938C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				9714825F2956DAD6003FB3A8 /* Day03.txt */,
+				971482612956DE81003FB3A8 /* DayThree.swift */,
 			);
 			path = DayThree;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				978EF0F72942128700F8938C /* Utils.swift in Sources */,
 				978EF1092942566700F8938C /* DayOne.swift in Sources */,
 				970870442955CB7900B0672B /* DayTwo.swift in Sources */,
+				971482622956DE81003FB3A8 /* DayThree.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
