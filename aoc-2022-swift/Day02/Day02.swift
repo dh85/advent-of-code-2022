@@ -1,8 +1,8 @@
-let day2Input = readFile(name: "Day02.txt").lines()
+let day02Input = readFile(name: "Day02.txt").lines()
 
 private let xAscii = Character("X").asciiValue!
 
-func day2Part1(input: [String]) -> Int {
+func day02Part1(input: [String]) -> Int {
     func shapeScore(_ shape: Character) -> Int {
         Int(shape.asciiValue! - xAscii + 1)
     }
@@ -21,7 +21,7 @@ func day2Part1(input: [String]) -> Int {
         .sum()
 }
 
-func day2Part2(input: [String]) -> Int {
+func day02Part2(input: [String]) -> Int {
     func shapeScore(_ theirShape: Character, _ desiredResult: Character) -> Int {
         switch (theirShape, desiredResult) {
         case ("A", "Y"), ("B", "X"), ("C", "Z"): return 1

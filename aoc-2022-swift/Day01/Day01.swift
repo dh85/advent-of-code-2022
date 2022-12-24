@@ -1,10 +1,10 @@
-let day1Input = readFile(name: "Day01.txt")
+private let input = readFile(name: "Day01.txt")
 
-func day1Part1(input: String) -> Int {
+func day01Part1() -> Int {
     input.parseElves(1)
 }
 
-func day1Part2(input: String) -> Int {
+func day01Part2() -> Int {
     input.parseElves(3)
 }
 

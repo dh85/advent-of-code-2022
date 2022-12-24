@@ -1,9 +1,9 @@
-private let day3Input = readFile(name: "Day03.txt").lines()
+let day03Input = readFile(name: "Day03.txt").lines()
 private let characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-func day3Part1() -> Int {
+func day3Part1(input: [String]) -> Int {
     var totalSum = 0
-    for rucksack in day3Input {
+    for rucksack in input {
         let half = rucksack.count / 2
         let left = Set(rucksack.prefix(half))
         let right = Set(rucksack.suffix(half))
@@ -17,11 +17,11 @@ func day3Part1() -> Int {
     return totalSum
 }
 
-func day3Part2() -> Int {
+func day3Part2(input: [String]) -> Int {
     var j = 3
     var totalSum = 0
-    for i in stride(from: 0, to: day3Input.count, by: 3) {
-        let rucksacks = Array(day3Input[i..<j])
+    for i in stride(from: 0, to: input.count, by: 3) {
+        let rucksacks = Array(input[i..<j])
         j += 3
         
         for (priority, char) in characters.enumerated() {
